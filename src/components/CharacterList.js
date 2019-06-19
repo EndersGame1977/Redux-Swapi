@@ -4,12 +4,20 @@ import Character from "./Character";
 
 const CharacterList = props => {
   return (
-    <ul>
+    <table className="highlight centered" >
+      <thead>
+        <tr>
+          <th><h5>Name</h5></th>
+        </tr>
+      </thead>
+      <tbody>
       {props.characters.map(character => {
         return <Character key={character.name} character={character} />;
       })}
-    </ul>
+      </tbody>
+    </table>
   );
 };
 
 export default CharacterList;
+

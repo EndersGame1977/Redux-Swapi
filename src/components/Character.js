@@ -1,7 +1,13 @@
 import React from "react";
 
 const Character = props => {
-  return <li>{props.character.name}</li>;
+  return( 
+  <tr>
+    <td className="collection-item " >
+      {props.character.name}
+    </td>
+  </tr>
+  )
 };
 
 export default Character;

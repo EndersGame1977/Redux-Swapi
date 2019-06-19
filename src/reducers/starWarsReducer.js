@@ -32,7 +32,7 @@ export const charsReducer = (state = initialState, action) => {
       return {
         ...state, 
         fetching: false,
-        error: "You made a kitten cry."
+        error: `${action.payload}`
       };
     
       default:
